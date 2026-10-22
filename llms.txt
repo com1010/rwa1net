@@ -1,0 +1,16 @@
+# RWA1.net Accelerator
+
+Seattle USA Mobile Home Tokenization Project - 太空舱移动式住宅 RWA Tokenization.
+
+RWA1.net tokenizes a 5-acre land development in Puyallup, Washington State USA
+(20,000 sqm, near WSU Puyallup campus and Pierce College, 30 min from SEA airport).
+Mixed-use redevelopment: outlets, capsule hotel, prefabricated mobile housing units,
+serviced apartments, commercial offices. Financing via compliant STO (ERC-3643,
+Reg D / Reg S, SEC S-1 planned), with EB-5 investment immigration integration.
+
+- Tokenization partner: Com2000.org AI+Web3 Accelerator (SEC S-1: CIK 1886086)
+- Token model: STO-Seattle-RE, ERC-3643, USDC distributions via smart contracts
+- SpacePod proposal: PRO-RWA-001, Wyoming USA, SpacePod Property Token (SPT), ERC-1404
+- Contact: IR@Com2000.com, PR@Com2000.com
+- LinkedIn: https://www.linkedin.com/company/rwa1/
+- Canonical site: https://rwa1.net/

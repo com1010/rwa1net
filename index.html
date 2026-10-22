@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RWA1.net Accelerator - Seattle USA Mobile Home Tokenization Project | 太空舱移动式住宅 RWA 代币化</title>
+<meta name="description" content="RWA1.net Accelerator Seattle USA - 太空舱移动式住宅 RWA Tokenization Project. 5-acre land development in Puyallup, Washington State with RWA tokenization (STO), mixed-use outlets, capsule hotel, prefab housing and EB-5 integration. 西雅图土地开发与RWA代币化商业计划.">
+<meta name="keywords" content="RWA, tokenization, STO, Seattle, Puyallup, EB-5, capsule hotel, prefab housing, 太空舱, 移动住宅, 代币化, Com2000, Web3 accelerator">
+<link rel="canonical" href="https://rwa1.net/">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="RWA1.net Accelerator - Seattle Mobile Home Tokenization Project">
+<meta property="og:description" content="太空舱移动式住宅 RWA Tokenization - Seattle, Washington State USA. STO financing, EB-5 integration, mixed-use development.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rwa1.net/">
+<meta property="og:image" content="https://rwa1.net/assets/img/render-winter.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RWA1 Accelerator",
+  "url": "https://rwa1.net",
+  "logo": "https://rwa1.net/assets/img/logo-rwa1.png",
+  "description": "RWA1.net Accelerator - Seattle USA Mobile Home Tokenization Project. RWA tokenization, STO financing, EB-5 integration.",
+  "sameAs": ["https://www.linkedin.com/company/rwa1/", "https://sites.google.com/view/rwa1net"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Puyallup",
+    "addressRegion": "Washington State",
+    "addressCountry": "US"
+  },
+  "partner": {
+    "@type": "Organization",
+    "name": "Com2000.org Web3 Accelerator",
+    "url": "https://com2000.org"
+  }
+}
+</script>
+<style>
+:root{
+  --bg:#070b16;
+  --bg2:#0b1224;
+  --panel:#101a33;
+  --panel2:#152140;
+  --line:rgba(96,165,250,.16);
+  --txt:#e6edf7;
+  --muted:#93a4c3;
+  --blue:#3b82f6;
+  --cyan:#22d3ee;
+  --gold:#f5b942;
+  --grad:linear-gradient(90deg,#3b82f6,#22d3ee);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",-apple-system,sans-serif;line-height:1.65}
+img{max-width:100%;display:block}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1160px;margin:0 auto;padding:0 20px}
+.section{padding:72px 0}
+.section-alt{background:var(--bg2)}
+.kicker{display:inline-block;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);border:1px solid var(--line);border-radius:999px;padding:4px 14px;margin-bottom:14px;background:rgba(34,211,238,.06)}
+h2.sec-title{font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.25;margin-bottom:10px}
+.sec-sub{color:var(--muted);max-width:860px;margin-bottom:36px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* topbar */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(7,11,22,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar-inner{display:flex;align-items:center;gap:14px;padding:10px 20px;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:var(--txt);white-space:nowrap}
+.brand img{width:36px;height:36px;border-radius:50%}
+.brand .dot{color:var(--cyan)}
+nav.mainnav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto;align-items:center}
+nav.mainnav a{color:var(--muted);font-size:.86rem;padding:7px 11px;border-radius:8px}
+nav.mainnav a:hover{color:var(--txt);background:var(--panel);text-decoration:none}
+nav.mainnav a.cta{background:var(--grad);color:#04121f;font-weight:600}
+nav.mainnav a.cta:hover{opacity:.9}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:84px 0 64px;background:radial-gradient(1200px 500px at 75% -10%,rgba(59,130,246,.22),transparent 60%),radial-gradient(900px 400px at 10% 110%,rgba(34,211,238,.12),transparent 60%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.hero h1{font-size:clamp(1.9rem,4.6vw,3.1rem);line-height:1.15;margin-bottom:16px}
+.hero .tagline{font-size:1.05rem;color:var(--muted);margin-bottom:20px}
+.hero .tagline b{color:var(--txt)}
+.partner-chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px}
+.partner-chips span{font-size:.8rem;color:var(--muted);border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:5px 13px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 22px;border-radius:10px;font-weight:600;font-size:.92rem}
+.btn-primary{background:var(--grad);color:#04121f}
+.btn-ghost{border:1px solid var(--line);color:var(--txt)}
+.btn:hover{text-decoration:none;opacity:.92}
+.hero-visual{position:relative}
+.hero-visual img.main{border-radius:16px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.hero-visual .logo-badge{position:absolute;right:-14px;top:-24px;width:110px;height:110px;border-radius:50%;box-shadow:0 12px 34px rgba(0,0,0,.55);border:2px solid rgba(59,130,246,.5)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat b{display:block;font-size:1.45rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:.82rem;color:var(--muted)}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card .ico{font-size:1.6rem;margin-bottom:10px}
+.card h3{font-size:1.02rem;margin-bottom:8px;color:var(--txt)}
+.card p{font-size:.88rem;color:var(--muted)}
+.card a{font-size:.85rem}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+.gallery img.wide{grid-column:span 2;height:220px}
+
+/* plan */
+.plan-block{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:18px}
+.plan-block h3{font-size:1.12rem;margin-bottom:12px;color:var(--cyan)}
+.plan-block h4{font-size:.98rem;margin:14px 0 6px;color:var(--gold)}
+.plan-block p,.plan-block li{font-size:.92rem;color:var(--muted)}
+.plan-block ul{padding-left:20px;margin:8px 0}
+.plan-block ul li{margin-bottom:6px}
+.plan-block b,.plan-block strong{color:var(--txt)}
+table.token{width:100%;border-collapse:collapse;margin-top:10px;font-size:.9rem}
+table.token th,table.token td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+table.token th{background:var(--panel2);color:var(--txt);white-space:nowrap}
+table.token td{color:var(--muted)}
+table.token td:first-child{color:var(--txt);white-space:nowrap}
+
+/* accelerator */
+.acc-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.acc-grid .card{margin-bottom:0}
+
+/* team */
+.team-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.member{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-align:center;transition:transform .15s}
+.member:hover{transform:translateY(-3px)}
+.member img{width:100%;aspect-ratio:1;object-fit:cover}
+.member .m-body{padding:12px 10px 14px}
+.member b{display:block;font-size:.9rem;color:var(--txt)}
+.member span{display:block;font-size:.76rem;color:var(--muted);margin-top:4px;line-height:1.45}
+.mgmt-list{margin-top:26px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 26px}
+.mgmt-list h3{color:var(--cyan);font-size:1.05rem;margin-bottom:10px}
+.mgmt-list p{font-size:.9rem;color:var(--muted)}
+
+/* logos */
+.logo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.logo-cell{background:#fff;border-radius:12px;padding:14px;display:flex;align-items:center;justify-content:center;min-height:86px}
+.logo-cell img{max-height:52px;width:auto;max-width:100%;object-fit:contain}
+
+/* news */
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.news-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.news-card img{width:100%;height:190px;object-fit:cover}
+.news-card .n-body{padding:18px;flex:1}
+.news-card h3{font-size:.98rem;margin-bottom:8px}
+.news-card p{font-size:.85rem;color:var(--muted)}
+.news-card .n-date{font-size:.75rem;color:var(--gold);margin-bottom:6px;display:block}
+
+/* amif */
+.amif{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;background:linear-gradient(135deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:16px;padding:30px}
+.amif img{width:130px;height:130px;border-radius:50%;background:#fff;padding:10px}
+
+/* footer */
+footer{border-top:1px solid var(--line);background:#060a13;padding:52px 0 30px}
+.foot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-bottom:34px}
+.foot-grid h4{font-size:.92rem;margin-bottom:12px;color:var(--txt)}
+.foot-grid p,.foot-grid li{font-size:.84rem;color:var(--muted);line-height:1.7}
+.foot-grid ul{list-style:none}
+.foot-bottom{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.78rem;color:var(--muted)}
+
+@media(max-width:960px){
+  .hero-grid,.acc-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:repeat(3,1fr)}
+  .logo-grid{grid-template-columns:repeat(4,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .news-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:repeat(2,1fr)}
+  .amif{grid-template-columns:1fr;text-align:left}
+}
+@media(max-width:560px){
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .logo-grid{grid-template-columns:repeat(3,1fr)}
+  .gallery{grid-template-columns:1fr}
+  .gallery img.wide{grid-column:span 1}
+  nav.mainnav a:not(.cta){display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#home"><img src="assets/img/logo-rwa1.png" alt="RWA1 logo">RWA1<span class="dot">.</span>net Accelerator</a>
+    <nav class="mainnav">
+      <a href="#project">Project</a>
+      <a href="#plan">Business Plan</a>
+      <a href="#accelerator">Accelerator</a>
+      <a href="#team">Team</a>
+      <a href="#partners">Partners</a>
+      <a href="#news">News</a>
+      <a href="https://www.linkedin.com/company/rwa1/" target="_blank" rel="noopener" class="cta">LinkedIn</a>
+    </nav>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker">RWA Tokenization · STO · EB-5 · Web3</span>
+        <h1>RWA1<span class="grad-text">.net</span> Accelerator<br>Seattle USA Mobile Home Tokenization Project</h1>
+        <p class="tagline">美国西雅图 Seattle 太空舱移动式住宅代币化 RWA 商业计划 — <b>太空舱移动式住宅 RWA Tokenization</b>, Puyallup, Washington State, USA.</p>
+        <div class="partner-chips">
+          <span>DenaTrust.com</span><span>MinaX.io</span><span>Klickl.com</span><span>Metakina.com</span><span>DappWeb.cn</span><span>KOLmarket</span><span>Com2000.org</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#plan">Read the Business Plan</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/company/rwa1/" target="_blank" rel="noopener">Follow on LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img class="main" src="assets/img/render-winter.jpg" alt="太空舱移动式住宅 Capsule mobile home rendering, Puyallup Washington">
+        <img class="logo-badge" src="assets/img/logo-rwa1.png" alt="RWA1.net">
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>5 英亩</b><span>土地面积 · 约20,000 m² (100m x 200m)</span></div>
+      <div class="stat"><b>30 分钟</b><span>距西雅图塔科马国际机场 SEA</span></div>
+      <div class="stat"><b>ERC-3643</b><span>合规证券型代币标准 STO</span></div>
+      <div class="stat"><b>EB-5</b><span>投资移民整合 · TEA $80万通道</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PROJECT OVERVIEW ===== -->
+<section class="section section-alt" id="project">
+  <div class="container">
+    <span class="kicker">Project Overview</span>
+    <h2 class="sec-title">美国 西雅图 Seattle 太空舱移动式住宅<span class="grad-text">代币化 RWA</span> 商业计划</h2>
+    <p class="sec-sub">本商业计划旨在将美国华盛顿州西雅图市皮阿拉普 Puyallup 一块 5 英亩 (约 2 万平方米) 的土地通过现实资产代币化 (RWA) 进行开发。项目融合奥特莱斯商业概念、移动建筑单元 (太空舱和组合式移动房屋) 及 EB-5 投资移民, 并通过证券型代币发行 (STO) 进行融资。项目地块临近华盛顿州立大学 (WSU) 皮阿拉普校区和皮尔斯学院, 距西雅图塔科马国际机场仅半小时车程, 地理位置优越。</p>
+    <p class="sec-sub">项目计划将土地从现有住宅用途重新规划为混合用途 (Mixed-Use), 涵盖酒店、汽车旅馆、零售商店、商业和住宅公寓。通过区块链技术将房地产资产代币化, 实现 fractional ownership (碎片化所有权), 降低投资门槛, 提升资产流动性, 并为 EB-5 投资者提供新型投资通道。</p>
+    <div class="cards">
+      <div class="card"><div class="ico">🔗</div><h3>RWA 代币化创新</h3><p>将房地产所有权转换为区块链上的数字代币, 实现碎片化投资和全球流动性。</p></div>
+      <div class="card"><div class="ico">🏙️</div><h3>混合用途开发</h3><p>融合奥特莱斯购物、移动建筑单元 (太空舱酒店和组合式住宅) 及教育社区需求。</p></div>
+      <div class="card"><div class="ico">🛂</div><h3>EB-5 投资移民整合</h3><p>为投资者提供通过代币化资产申请美国绿卡的途径。</p></div>
+      <div class="card"><div class="ico">📈</div><h3>STO 融资</h3><p>通过符合监管的证券型代币发行募集资金, 并计划未来进行 IPO。</p></div>
+    </div>
+    <div style="height:26px"></div>
+    <div class="gallery">
+      <img class="wide" src="assets/img/render-mobilehome.jpg" alt="组合式移动房屋 Prefabricated mobile housing unit">
+      <img src="assets/img/render-forest.jpg" alt="太空舱移动住宅开发概念图">
+      <img src="assets/img/render-mountain.jpg" alt="山地移动住宅开发概念图">
+      <img class="wide" src="assets/img/aerial-1.jpg" alt="Puyallup 项目地块航拍 Aerial view of the 5-acre site">
+      <img src="assets/img/aerial-2.jpg" alt="项目地块周边航拍, 临近 WSU 校区">
+      <img src="assets/img/aerial-3.jpg" alt="项目地块周边航拍, 交通便利">
+      <img class="wide" src="assets/img/aerial-4.jpg" alt="项目地块航拍 Site aerial photograph">
+      <img src="assets/img/aerial-5.jpg" alt="项目地块周边社区航拍">
+      <img src="assets/img/aerial-6.jpg" alt="项目地块周边航拍">
+    </div>
+  </div>
+</section>
+
+<!-- ===== BUSINESS PLAN ===== -->
+<section class="section" id="plan">
+  <div class="container">
+    <span class="kicker">Business Plan</span>
+    <h2 class="sec-title">西雅图土地开发与 RWA 代币化<span class="grad-text">商业计划</span> 🏢</h2>
+    <p class="sec-sub">摘要 RWA1.net - 9 大板块: 地块详情 / 代币化方案 / 代币经济 / 技术实现 / 开发概念 / EB-5 整合 / 重新规划提案 / 融资与上市 / 风险管理。</p>
+
+    <div class="plan-block">
+      <h3>1 · 项目地块详情</h3>
+      <ul>
+        <li><b>位置:</b> 美国华盛顿州 Washington State 皮阿拉普市 (Puyallup), 临近华盛顿州立大学 (WSU) 皮阿拉普校区和皮尔斯学院皮阿拉普校区。</li>
+        <li><b>交通:</b> 距离西雅图塔科马国际机场 (SEA Seattle-Tacoma Airport) 约 30 分钟车程, 周边有多所高校, 学生和教职员工群体庞大。</li>
+        <li><b>面积:</b> 5 英亩 (约 100m x 200m, 2 万平方米)。</li>
+        <li><b>当前用途:</b> 住宅用地 (Residential)。</li>
+        <li><b>目标用途:</b> 申请重新规划为混合用途 (Mixed-Use): 奥特莱斯零售商店 (Outlets) · 太空舱概念酒店 (Capsule Hotel) · 组合式移动住宅单元 (Prefabricated Housing Units) · 服务式公寓 (Serviced Apartments) · 商业办公空间 (Commercial Offices)。</li>
+      </ul>
+    </div>
+
+    <div class="plan-block">
+      <h3>2 · RWA 代币化方案</h3>
+      <h4>2.1 代币化结构</h4>
+      <ul>
+        <li><b>资产剥离与 SPV 设立:</b> 将地块资产剥离至一家特殊目的载体 (SPV) (例如特拉华州系列 LLC), 该 SPV 将持有该房地产资产。</li>
+        <li><b>代币代表所有权:</b> 发行代表 SPV 股权的数字代币 (ERC-20 或更适用于 RWA 的 ERC-3643 标准), 每个代币对应房地产项目的部分所有权。代币持有人间接拥有底层房地产的权益。</li>
+        <li><b>法律合规性:</b> 确保代币发行符合美国证券法 (Reg D, Reg S 等), 完成 SEC 备案 (如 S-1 注册表格), 并与合作律师事务所密切合作, 满足证券型代币 (STO) 的要求。</li>
+        <li><b>募资规模:</b> 根据地块价值和开发成本评估设定总代币供应量及单价。参考 RealT 模式, 可将资产价值分割成大量小额代币。</li>
+      </ul>
+      <h4>2.2 代币经济模型</h4>
+      <table class="token">
+        <tr><th>代币名称</th><td>STO-Seattle-RE</td></tr>
+        <tr><th>代币标准</th><td>ERC-3643 (适用于合规证券型代币)</td></tr>
+        <tr><th>总供应量</th><td>待定 (根据最终资产评估和募资目标确定)</td></tr>
+        <tr><th>代币价值</th><td>与底层房地产资产价值锚定</td></tr>
+        <tr><th>收益分配</th><td>通过智能合约, 租金、销售收入等收益将自动按比例分配至代币持有人钱包, 预计以 USDC 稳定币结算</td></tr>
+        <tr><th>锁定期</th><td>根据证券法规定及投资者类别 (如 EB-5 投资者) 设定</td></tr>
+        <tr><th>交易</th><td>初期在合规证券型代币交易所进行二级交易 (例如 tZERO, ADDX 等)</td></tr>
+      </table>
+      <h4>2.3 技术实现</h4>
+      <ul>
+        <li><b>区块链平台:</b> 以太坊 (Ethereum) 或其他支持智能合约且合规的区块链。</li>
+        <li><b>智能合约:</b> 用于代币发行、收益分配、投资者 KYC/AML 验证等。智能合约需经过权威审计。</li>
+        <li><b>预言机 (Oracle):</b> 引入预言机将线下资产数据 (如租金收入、物业估值) 上链, 确保数据真实透明。</li>
+        <li><b>数字钱包:</b> 投资者需使用支持证券型代币的钱包 (如 MetaMask) 来接收和持有代币。</li>
+      </ul>
+    </div>
+
+    <div class="plan-block">
+      <h3>3 · 开发概念: 奥特莱斯与移动建筑</h3>
+      <ul>
+        <li><b>奥特莱斯购物中心 (Outlets):</b> 利用靠近高校和机场的优势, 吸引学生、居民和游客。引入品牌折扣店、本地特色商品、餐饮和娱乐设施。</li>
+        <li><b>太空舱酒店 (Capsule Hotel):</b> 为预算有限的旅客、访学者和学生家属提供短期住宿解决方案。设计现代化、节能的太空舱单元, 配备智能入住系统。</li>
+        <li><b>组合式移动住宅单元 (Prefabricated Housing Units):</b> 快速建造、环保且成本效益高的住宅单元, 用于出售或长租。目标客户包括学生、年轻专业人士和 EB-5 投资者。</li>
+        <li><b>混合用途空间:</b> 整合零售、餐饮、办公和居住空间, 创建一个充满活力的社区中心。</li>
+      </ul>
+    </div>
+
+    <div class="plan-block">
+      <h3>4 · EB-5 投资移民整合</h3>
+      <ul>
+        <li><b>机会:</b> EB-5 计划要求外国投资者在美国商业企业投资一定金额 (通常为目标就业区 TEA 80 万美元) 并创造至少 10 个就业岗位。</li>
+        <li><b>本项目整合:</b> 将部分代币发售专门面向 EB-5 投资者。投资者的资金将通过购买代币注入本项目 SPV, 符合 EB-5 投资要求。</li>
+        <li><b>就业创造:</b> 项目开发 (建设) 和运营 (酒店、零售管理) 将创造大量就业机会, 满足 EB-5 要求。</li>
+        <li><b>合规保障:</b> 与专门从事 EB-5 的移民律师合作, 确保项目结构完全符合 USCIS 要求。</li>
+      </ul>
+    </div>
+
+    <div class="plan-block">
+      <h3>5 · 政府重新规划 (Re-Zoning) 提案设计</h3>
+      <ul>
+        <li><b>经济益处:</b> 创造大量临时 (建设) 和永久性 (运营) 工作岗位; 增加地方税收收入; 吸引更多游客和消费者到该地区, 提振本地经济。</li>
+        <li><b>社会与社区益处:</b> 为华盛顿州立大学和皮尔斯学院的学生、教职工及访客提供急需的住宿、零售和服务设施。创新的建筑形式 (移动单元、太空舱) 提供可负担的居住和住宿选择。混合用途开发符合现代城市规划的 "智慧增长" (Smart Growth) 理念, 提高土地利用率。</li>
+        <li><b>环境与设计考量:</b> 采用环保建材和节能设计 (如 LEED 认证)。确保建筑设计符合社区风貌, 提供充足的绿化和公共空间。进行交通影响研究 (Traffic Impact Analysis) 并提出改善方案。</li>
+        <li><b>合规与流程:</b> 聘请当地的土地使用律师和规划顾问。举办公开听证会或社区会议, 听取居民意见并获取支持。向皮阿拉普市规划部门提交详细的重新规划申请, 包括环境影响评估、交通研究、设计方案等。</li>
+      </ul>
+    </div>
+
+    <div class="plan-block">
+      <h3>6 · 融资与上市计划</h3>
+      <ul>
+        <li><b>第一阶段 STO 私募融资:</b> 根据 SEC 监管豁免条例 (如 Reg D 506(c)) 向合格投资者和 EB-5 投资者进行私募融资, 为土地回购、初步设计和申请重新规划提供资金。</li>
+        <li><b>第二阶段 开发与建设:</b> 获得重新规划批准后, 使用 STO 募集的资金启动一期开发 (例如奥特莱斯和部分住宅单元)。</li>
+        <li><b>第三阶段 STO 公募与 IPO 计划:</b> 项目开发取得一定进展后, 向 SEC 提交 S-1 注册表格, 为更广泛的公募做准备。未来考虑像 Figure 那样进行传统 IPO, 进一步扩大流动性和融资渠道。</li>
+        <li><b>第四阶段 运营与收益分配:</b> 项目投入运营, 通过智能合约将租金、销售收入等自动分配至代币持有人。</li>
+      </ul>
+    </div>
+
+    <div class="plan-block">
+      <h3>7 · 风险与缓解措施</h3>
+      <table class="token">
+        <tr><th>风险类别</th><th>风险描述</th><th>缓解措施</th></tr>
+        <tr><td>监管风险</td><td>证券监管 (SEC) 或移民局 (USCIS) 政策变化</td><td>与经验丰富的证券律师和 EB-5 移民律师紧密合作</td></tr>
+        <tr><td>市场风险</td><td>房地产市场需求波动、利率变化</td><td>进行充分的市场调研, 设计多元化的收入来源 (零售、住宿、住宅)</td></tr>
+        <tr><td>技术风险</td><td>智能合约漏洞、预言机数据篡改</td><td>进行严格的智能合约审计, 采用信誉良好的预言机服务</td></tr>
+        <tr><td>执行风险</td><td>建设成本超支、工期延误</td><td>聘请有经验的开发商和项目管理团队, 采用预制模块化建筑缩短工期</td></tr>
+        <tr><td>流动性风险</td><td>代币在二级市场流动性不足</td><td>与多家合规证券型代币交易所合作上市, 未来考虑 IPO</td></tr>
+      </table>
+    </div>
+
+    <div class="plan-block">
+      <h3>8 · 团队与合作夥伴</h3>
+      <ul>
+        <li><b>太平洋投资 (Pacific Investments):</b> 项目发起方, 负责整体战略和资源整合。</li>
+        <li><b>当地房地产开发商:</b> 拥有西雅图地区开发经验, 负责项目建设。</li>
+        <li><b>区块链技术公司:</b> 负责代币发行、智能合约开发和区块链基础设施 (可考虑与 Blocksquare 等平台合作)。</li>
+        <li><b>美国证券律师事务所:</b> 确保 STO 符合所有监管要求。</li>
+        <li><b>EB-5 区域中心或移民律师:</b> 构建符合 EB-5 要求的投资方案。</li>
+        <li><b>物业管理公司:</b> 项目建成后的日常运营和维护。</li>
+      </ul>
+    </div>
+
+    <div class="plan-block">
+      <h3>9 · 结论与下一步行动</h3>
+      <p>本计划通过 RWA 代币化创新性地将西雅图土地开发、奥特莱斯概念、移动建筑和 EB-5 投资相结合, 旨在创建一个高流动性、低投资门槛且合规的创新型房地产投资平台, 为全球投资者和 EB-5 移民申请人提供全新通道。</p>
+      <div style="display:flex;gap:26px;flex-wrap:wrap;margin-top:18px;align-items:center">
+        <img src="assets/img/infographic-rwa.jpg" alt="What is RWA Tokenization? 现实资产代币化图解" style="max-width:340px;border-radius:10px;border:1px solid var(--line)">
+        <img src="assets/img/cert-seal.jpg" alt="RWA1 项目认证 seal" style="max-width:260px;border-radius:10px;border:1px solid var(--line)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPACEPOD STO PROPOSAL ===== -->
+<section class="section section-alt" id="spacepod">
+  <div class="container">
+    <span class="kicker">RWA Tokenization Proposal</span>
+    <h2 class="sec-title">太空舱-组合式移动房屋资产代币化 <span class="grad-text">RWA STO 项目</span></h2>
+    <p class="sec-sub">文件编号: PRO-RWA-001 · 日期: 2023年10月27日 · 项目名称: 太空舱 (SpacePod) 模块化移动房屋项目 · 代币类型: 房地产支持证券型代币 (Security Token) · 发行管辖地: 美国怀俄明州 (Wyoming, USA)</p>
+    <div class="acc-grid">
+      <div class="card">
+        <h3>执行摘要 Executive Summary</h3>
+        <p>本提案旨在通过真实世界资产 (RWA) 代币化与证券型代币发行 (STO) 的方式, 为 "太空舱" 模块化移动房屋项目进行融资。我们将把项目下的物理资产 (房屋产权、租赁收益权) 转化为基于区块链的数字化证券型代币 (Security Token), 在全球范围内向符合资格的投资者进行募集。此举不仅能高效融资, 还将为投资者提供透明、合规且具备流动性的创新型房地产投资渠道。</p>
+      </div>
+      <div class="card">
+        <h3>项目介绍: 太空舱 SpacePod</h3>
+        <p><b style="color:var(--txt)">产品概念:</b> "太空舱" 是一种高科技、可快速部署的模块化移动房屋。采用轻量化、高强度的复合材料, 集成了智能家居系统、节能设备和可持续设计。<br>
+        <b style="color:var(--txt)">目标市场:</b> 高端露营度假村、精品酒店扩容、临时性工作人员宿舍、应急住房解决方案。<br>
+        <b style="color:var(--txt)">核心优势:</b> 快速组装、生态友好、科技感十足、可移动性和资产保值性。</p>
+      </div>
+      <div class="card">
+        <h3>代币化方案 Tokenization Structure</h3>
+        <p><b style="color:var(--txt)">方案A (直接产权):</b> 将首批生产的 200 套 "太空舱" 房屋的物理产权注入到特殊目的实体 (SPV) 中。代币持有人直接按份额拥有这些房屋的所有权。<br>
+        <b style="color:var(--txt)">方案B (收益权):</b> 代币代表对 "太空舱" 租赁业务的收益权。项目运营方将房屋出租给度假村或企业, 所产生的租金收入将按比例分配给代币持有人。</p>
+      </div>
+      <div class="card">
+        <h3>代币详情 Token Details</h3>
+        <p>代币名称: <b style="color:var(--txt)">SpacePod Property Token (SPT)</b><br>
+        代币标准: <b style="color:var(--txt)">ERC-1404</b> (或类似符合证券标准的协议, 支持转账限制)<br>
+        总发行量: 固定发行, 代表资产池的 100% 所有权或收益权。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COM2000 ACCELERATOR ===== -->
+<section class="section" id="accelerator">
+  <div class="container">
+    <span class="kicker">Tokenization Partner</span>
+    <h2 class="sec-title">Com2000.org — AI + Web3 <span class="grad-text">Accelerator</span></h2>
+    <p class="sec-sub">Com2000 USA IPO S1 Registration Approved by the SEC · AI Blockchain Cloud Data Ecommerce ABCDE Incubator</p>
+    <div class="acc-grid">
+      <div class="card">
+        <h3>About Com2000</h3>
+        <p>Com2000 is a leading AI+Web3 Accelerator across SE Asia, Vietnam, Singapore, Thailand, Hong Kong, Shenzhen, Switzerland, USA and UK dedicated to the development of ABCDE - AI, Blockchain, Cloud, Data &amp; Ecommerce technologies. Our goal is to advance the adoption of AI DePIN, Web3, GameFi, blockchain technology around the world through investments. We support early-stage Web3 startups by helping them with talent recruitment, networking, fundraising, project incubation, PR and branding, media, events, KOL, MCN, community building, and more.</p>
+        <p style="margin-top:10px"><a href="https://www.sec.gov/edgar/browse/?CIK=1886086" target="_blank" rel="noopener">SEC S-1 Registration: CIK 1886086 →</a></p>
+      </div>
+      <div class="card">
+        <h3>Builders · Development · Community</h3>
+        <p>Bridging the ecosystems of the east and west. Our investment partners include the world's leading exchanges, cybersecurity experts and infrastructures in the Web3 industry. We hand-on support builders end to end - from marketing, community relations to engineering and ecological construction. We run monthly meetups around the globe (SE Asia, Vietnam, Thailand, Malaysia, Singapore, Hong Kong, China Taiwan, Switzerland, Canada, UK, USA) and host large-scale hackathons every year.</p>
+        <p style="margin-top:10px">Incubation &amp; Fundraising: one-to-one support, mentorship from experienced Web2-Web3 founders, and workshops across 6 key modules - Web3 Product Design &amp; Strategy, Tokenomics, Governance, Marketing Mentorship, Community Building, Fundraising.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="section section-alt" id="team">
+  <div class="container">
+    <span class="kicker">Leadership</span>
+    <h2 class="sec-title">Com2000 Board of Directors, Advisors &amp; <span class="grad-text">Management Team</span></h2>
+    <p class="sec-sub">RWA1 / Com2000.org Web3 Accelerator 董事会、顾问与管理团队 - Builders, Development, Community Leaders, Partnership.</p>
+    <div class="team-grid">
+      <div class="member"><img src="assets/img/team-00.jpg" alt="Michael Gaard" loading="lazy"><div class="m-body"><b>Michael Gaard</b><span>Chairman, Com2000 · Former Accenture, PWC, Head of FinTech USA</span></div></div>
+      <div class="member"><img src="assets/img/team-01.jpg" alt="Wei Zhang" loading="lazy"><div class="m-body"><b>Wei Zhang</b><span>RWA1 SmartContract Expert · Metakina.com Com2000.org RWA Partner</span></div></div>
+      <div class="member"><img src="assets/img/team-02.jpg" alt="Tony Tong" loading="lazy"><div class="m-body"><b>Tony Tong</b><span>Director, Secretary, Com2000 · TonyTong.cc</span></div></div>
+      <div class="member"><img src="assets/img/team-03.jpg" alt="David Wong" loading="lazy"><div class="m-body"><b>David Wong</b><span>CFO, Director, Com2000</span></div></div>
+      <div class="member"><img src="assets/img/team-04.jpg" alt="Albert Cheok" loading="lazy"><div class="m-body"><b>Albert Cheok</b><span>Advisor, Angel Investor, Com2000</span></div></div>
+      <div class="member"><img src="assets/img/team-05.jpg" alt="Sing Wang" loading="lazy"><div class="m-body"><b>Sing Wang</b><span>Advisor, RWA FinTech, Angel Investor · MainChainTech.com TKK Capital</span></div></div>
+      <div class="member"><img src="assets/img/team-06.jpg" alt="Thomas Cheung" loading="lazy"><div class="m-body"><b>Thomas Cheung</b><span>VC Advisor, Com2000 · HKBA.cc Co-Chairman · ThomasCheung.cc</span></div></div>
+      <div class="member"><img src="assets/img/team-07.jpg" alt="Timmy Tan" loading="lazy"><div class="m-body"><b>Timmy Tan</b><span>FinTech Advisor, Philippine Media, Com2000</span></div></div>
+      <div class="member"><img src="assets/img/team-08.jpg" alt="Cai WenSheng" loading="lazy"><div class="m-body"><b>Cai WenSheng</b><span>Advisor, CAI Angel Investor · Meitu.com LongLing.com</span></div></div>
+      <div class="member"><img src="assets/img/team-09.jpg" alt="HongYu Zhang" loading="lazy"><div class="m-body"><b>HongYu Zhang</b><span>Investor, Com2000 · Co-Founder of Metalpha.net (Nasdaq MATH)</span></div></div>
+      <div class="member"><img src="assets/img/team-10.jpg" alt="Alex Ruffin" loading="lazy"><div class="m-body"><b>Alex Ruffin</b><span>Partner, France &amp; Europe · Gains-Associates.com</span></div></div>
+      <div class="member"><img src="assets/img/team-11.jpg" alt="Cai GeYang" loading="lazy"><div class="m-body"><b>Cai GeYang</b><span>Com2000.org Web3 CyberSecurity Alliance Advisor</span></div></div>
+      <div class="member"><img src="assets/img/team-12.jpg" alt="YauGene Chen" loading="lazy"><div class="m-body"><b>YauGene Chen</b><span>ITU Com2000 Advisor · ITU.edu International Technological University</span></div></div>
+      <div class="member"><img src="assets/img/team-13.jpg" alt="Anton Trantin" loading="lazy"><div class="m-body"><b>Anton Trantin</b><span>Advisor, Angel Investor, Com2000</span></div></div>
+      <div class="member"><img src="assets/img/team-14.jpg" alt="Ander Tsui" loading="lazy"><div class="m-body"><b>Ander Tsui</b><span>Advisor &amp; Investor · Vertex.Capital SuperChainCapital.io</span></div></div>
+      <div class="member"><img src="assets/img/team-15.jpg" alt="Richard Wang" loading="lazy"><div class="m-body"><b>Richard Wang</b><span>Web3 Incubation Advisor · DraperDragon.com DFJ.com</span></div></div>
+      <div class="member"><img src="assets/img/team-16.jpg" alt="Steven Lin Wan Qaing" loading="lazy"><div class="m-body"><b>Steven Lin Wan Qaing</b><span>VC Advisor, Com2000.org</span></div></div>
+      <div class="member"><img src="assets/img/team-17.jpg" alt="Chris Lee" loading="lazy"><div class="m-body"><b>Chris Lee</b><span>RWA Advisor · UAEC Dena Investment</span></div></div>
+      <div class="member"><img src="assets/img/team-18.jpg" alt="Geoffrey Baker" loading="lazy"><div class="m-body"><b>Geoffrey Baker</b><span>Swiss Advisor, Com2000</span></div></div>
+      <div class="member"><img src="assets/img/team-19.jpg" alt="David Do" loading="lazy"><div class="m-body"><b>David Do</b><span>Partner · 9S Dubai Lumina Capital</span></div></div>
+      <div class="member"><img src="assets/img/team-20.jpg" alt="Allen Yan" loading="lazy"><div class="m-body"><b>Allen Yan</b><span>CEO, Director, Com2000</span></div></div>
+      <div class="member"><img src="assets/img/team-21.jpg" alt="Jimmy Zhang" loading="lazy"><div class="m-body"><b>Jimmy Zhang</b><span>Web3 Incubator Advisor · EternalVentures.io</span></div></div>
+      <div class="member"><img src="assets/img/team-22.jpg" alt="Sisley Cheng" loading="lazy"><div class="m-body"><b>Sisley Cheng</b><span>Web3Hub Advisor, Com2000.org</span></div></div>
+      <div class="member"><img src="assets/img/team-23.jpg" alt="Sergei Stetsenko" loading="lazy"><div class="m-body"><b>Sergei Stetsenko</b><span>Advisor · Capital Research Group CGI.ai</span></div></div>
+      <div class="member"><img src="assets/img/team-24.jpg" alt="Mike Wen" loading="lazy"><div class="m-body"><b>Mike Wen</b><span>VP Ecommerce · WoniPay.com ePayment</span></div></div>
+      <div class="member"><img src="assets/img/team-25.jpg" alt="Cheryl Yang" loading="lazy"><div class="m-body"><b>Cheryl Yang</b><span>IR PR Advisor · EternalVentures.io</span></div></div>
+      <div class="member"><img src="assets/img/team-26.jpg" alt="LiLi" loading="lazy"><div class="m-body"><b>LiLi</b><span>Web3 Lawyer · JingTian.com Legal Advisor · ComBoox.vercel.app</span></div></div>
+      <div class="member"><img src="assets/img/team-27.jpg" alt="Danny Deng" loading="lazy"><div class="m-body"><b>Danny Deng</b><span>STO RWA Advisor, Com2000</span></div></div>
+      <div class="member"><img src="assets/img/team-28.jpg" alt="Sam Tsang" loading="lazy"><div class="m-body"><b>Sam Tsang</b><span>AI Quant Advisor · TradingBase.AI</span></div></div>
+      <div class="member"><img src="assets/img/team-29.jpg" alt="Lynn Yang" loading="lazy"><div class="m-body"><b>Lynn Yang</b><span>HKBA Secretary Web3Hub, Com2000</span></div></div>
+      <div class="member"><img src="assets/img/team-30.jpg" alt="Bill Zhang" loading="lazy"><div class="m-body"><b>Bill Zhang</b><span>Advisor, Com2000 · BillMining Bitcoin</span></div></div>
+      <div class="member"><img src="assets/img/team-31.jpg" alt="Alma Li" loading="lazy"><div class="m-body"><b>Alma Li</b><span>Web3 PR Media Advisor · Techub.news</span></div></div>
+      <div class="member"><img src="assets/img/team-32.jpg" alt="Andy Lo" loading="lazy"><div class="m-body"><b>Andy Lo</b><span>Partner, Advisor · LA USA Kingdomnova Capital</span></div></div>
+      <div class="member"><img src="assets/img/team-33.jpg" alt="Xu Bin" loading="lazy"><div class="m-body"><b>Xu Bin</b><span>Web3 Investor · DenaTrust.com</span></div></div>
+      <div class="member"><img src="assets/img/team-34.jpg" alt="Jeremy Goodwin" loading="lazy"><div class="m-body"><b>Jeremy Goodwin</b><span>Advisor, Com2000.org USA</span></div></div>
+      <div class="member"><img src="assets/img/team-35.jpg" alt="Jerry Li" loading="lazy"><div class="m-body"><b>Jerry Li</b><span>Advisor · BizChain ASEANblock.org</span></div></div>
+      <div class="member"><img src="assets/img/team-36.jpg" alt="Victor Tong" loading="lazy"><div class="m-body"><b>Victor Tong</b><span>Advisor, AI Cloud, Com2000</span></div></div>
+      <div class="member"><img src="assets/img/team-37.jpg" alt="Jacob Lakhany" loading="lazy"><div class="m-body"><b>Jacob Lakhany</b><span>PR USA, Com2000</span></div></div>
+      <div class="member"><img src="assets/img/team-38.jpg" alt="Ian Wang" loading="lazy"><div class="m-body"><b>Ian Wang</b><span>Director · Com2000 Illinois USA Incubator</span></div></div>
+      <div class="member"><img src="assets/img/team-39.jpg" alt="Chen YiBiao" loading="lazy"><div class="m-body"><b>Chen YiBiao</b><span>PR Media Advisor, Com2000</span></div></div>
+    </div>
+    <div class="mgmt-list">
+      <h3>Com2000 Management Team</h3>
+      <p>Michael Gaard, Chairman, Director, Com2000 USA · Allen (Allan) Yan, CEO, Director, Com2000 USA · Tony Tong, Company Secretary, Director of Asia Business Development, Com2000.org · David Wong, CFO, Director, Com2000 USA · Anton Trantin, Advisor, Angel Investor, Com2000 Europe · Jeremy Goodwin, Advisor, Com2000 USA · Victor Tong, Advisor, AI Cloud Computing USA · Jacob Lakhany, PR, Com2000 USA · Albert Cheok, Com2000 Advisor, Web3 Investor, KL Malaysia · Chai GeYang, Com2000 Advisor, Web3 Investor.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTNERS / ECOSYSTEM ===== -->
+<section class="section" id="partners">
+  <div class="container">
+    <span class="kicker">Ecosystem</span>
+    <h2 class="sec-title">Investment Partners &amp; <span class="grad-text">Ecosystem</span></h2>
+    <p class="sec-sub">Our investment partners include the world's leading exchanges, cybersecurity experts and infrastructures in the Web3 industry.</p>
+    <div class="logo-grid">
+      <div class="logo-cell"><img src="assets/img/lg-gains.png" alt="GAINS Associates" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-idg.png" alt="IDG Capital" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-softbank.png" alt="SoftBank" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-nexstox.png" alt="NEXSTOX" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-hashkey-snz.png" alt="HashKey SNZ" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-longling.png" alt="LongLing Capital 隆领投资" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-ton.png" alt="TON" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-chainlink.png" alt="Chainlink" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-helium.png" alt="Helium" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-chainup.png" alt="ChainUP" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-hextrust.png" alt="Hex Trust" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-nvidia.png" alt="NVIDIA" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-itu.png" alt="International Technological University" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-token2049.png" alt="TOKEN2049" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-techub.png" alt="Techub News" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-scalingx.png" alt="ScalingX" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-hackvc.png" alt="Hack VC" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-barmy.png" alt="B.ARMY" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-klickl.png" alt="Klickl" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-oort.png" alt="OORT" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-bingox.png" alt="BingoX" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-billmining.png" alt="BillMining" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-vpsai.png" alt="VPSAI" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-superchain.png" alt="SuperChain Capital" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-vertex.png" alt="Vertex Labs" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-uaec.png" alt="UAEC" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-sinohope.png" alt="新火科技 SINOHOPE" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-circle.png" alt="Circle" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-k300.png" alt="K300 Ventures" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-legend.png" alt="Legend" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-cryptoflow.png" alt="Crypto Flow 加密科技" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-milways.png" alt="MILWAYS" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-matrixport.png" alt="Matrixport" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-hkdotc.png" alt="HKD.com OTC" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-fibonacci.png" alt="Fibonacci" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-btccom.png" alt="BTC.com" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-cspro.png" alt="CS PRO" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-dgg.png" alt="DGG Network" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-smartcon.png" alt="Chainlink SmartCon" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-edge.png" alt="EDGE" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-theanh28.png" alt="TheAnh28 TV" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-dena.png" alt="Dena Trust" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-hkba.png" alt="Hong Kong Blockchain Association HKBA" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-hkust.png" alt="香港科技大学 HKUST" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-umn.png" alt="University of Minnesota" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-utokyo.png" alt="University of Tokyo" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-itu-global.png" alt="ITU Global Ltd" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-zgc.png" alt="中关村区块链产业联盟" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-aaba.png" alt="ASEAN AI Blockchain Alliance AABA" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-qianhai.png" alt="前海 Web3 Hub" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-idom.png" alt="iDom Capital" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-superangel.png" alt="SuperAngel.cc" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-tads.png" alt="TADS Awards" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-osl.png" alt="OSL" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-ameta.png" alt="AMeta.club Asia Metaverse Alliance" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-com2000.png" alt="Com2000 Accelerator" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-9cat.png" alt="9CAT" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-unilive.png" alt="UniLive" loading="lazy"></div>
+      <div class="logo-cell"><img src="assets/img/lg-fundgd.png" alt="Fund GD" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWS ===== -->
+<section class="section section-alt" id="news">
+  <div class="container">
+    <span class="kicker">News &amp; Press</span>
+    <h2 class="sec-title">News &amp; <span class="grad-text">Press Releases</span></h2>
+    <p class="sec-sub">Com2000 / RWA1 最新动态与媒体报道.</p>
+    <div class="news-grid">
+      <article class="news-card">
+        <img src="assets/img/news-idg.jpg" alt="IDG Capital Vietnam x Com2000 HKBA MOU signing ceremony">
+        <div class="n-body">
+          <span class="n-date">IDG Capital Vietnam Investment Summit · HCMC</span>
+          <h3>IDG Vietnam signs Cooperation MOU with HKBA Com2000 Web3Hub Incubator Accelerator</h3>
+          <p>At the IDG Capital Vietnam Investment Summit, Com2000.org HKBA and IDG Capital Vietnam signed a Cooperation MOU to collaborate on AI and Web3 project incubation, acceleration and investment. "Vietnam's growing and young population translates into a bigger domestic consumer market and a more attractive profile for foreign investment." - Mr. Duc Tran, GM of IDG Vietnam Capital.</p>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="assets/img/news-gains.jpg" alt="Alexandre Ruffin, GAINS Associates">
+        <div class="n-body">
+          <span class="n-date">June 21, 2025 · HKBA Paris, France</span>
+          <h3>GAINS Associates Signs Strategic Cooperation MOU with Com2000.org</h3>
+          <p>GAINS Associates, a venture firm backing some of the most successful names in the blockchain space (early supporter of Avalanche, Hashgraph, Quant), signed an MOU with Com2000.org to explore joint opportunities supporting and launching cutting-edge projects at the intersection of AI and Web3.</p>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="assets/img/news-kinglegends.jpg" alt="King Legends x Com2000 HKBA strategic partnership">
+        <div class="n-body">
+          <span class="n-date">Strategic Partnership</span>
+          <h3>KingorLegends King Legends x Com2000 Strategic Partnership</h3>
+          <p>King Legends (KingorLegends.net, KingorLegends.finance) announces strategic partnership with Com2000.org Web3 Incubator and Hong Kong Blockchain Association HKBA.club - Play to Earn Web3 gaming meets Web3 incubation.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AMIF ===== -->
+<section class="section" id="amif">
+  <div class="container">
+    <span class="kicker">Web3 Incubation Launch Fund</span>
+    <h2 class="sec-title">AsiaMeta Incubation Fund <span class="grad-text">AMIF1</span></h2>
+    <div class="amif">
+      <img src="assets/img/lg-ameta2.png" alt="AMIF1 AsiaMeta Incubation Fund">
+      <div>
+        <p style="color:var(--muted);font-size:.95rem"><b style="color:var(--txt)">AMIF1: Web3 Incubation Launch Fund</b> for Rapid Startup Launch. Joint Venture with Com2000 Web3 Incubator, Hong Kong Blockchain Association HKBA.club, Asia Metaverse Alliance AMeta.club.</p>
+        <p style="margin-top:12px"><a href="https://Link1.in/Com2000" target="_blank" rel="noopener">Link1.in/Com2000 →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="contact">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>RWA1.net Accelerator</h4>
+        <p>Seattle USA Mobile Home Tokenization Project 太空舱移动式住宅 RWA Tokenization. Puyallup, Washington State, USA.</p>
+        <p style="margin-top:10px"><a href="https://www.linkedin.com/company/rwa1/" target="_blank" rel="noopener">LinkedIn: linkedin.com/company/rwa1</a></p>
+      </div>
+      <div>
+        <h4>Com2000 Contact</h4>
+        <p>Email: IR@Com2000.com<br>PR@Com2000.com</p>
+        <p style="margin-top:8px">USA Office: C/O ITU.edu, 2010 El Camino Real, #852, Santa Clara, CA 95050, USA<br>Com2000, Inc., 1575 W Horizon Ridge Pkwy, #531401, Henderson, NV 89012, USA</p>
+      </div>
+      <div>
+        <h4>Web Links</h4>
+        <ul>
+          <li><a href="https://Com2000.org" target="_blank" rel="noopener">Com2000.org</a></li>
+          <li><a href="https://www.sec.gov/edgar/browse/?CIK=1886086" target="_blank" rel="noopener">SEC EDGAR: CIK 1886086</a></li>
+          <li><a href="https://com1010.github.io/com2000/" target="_blank" rel="noopener">Com2000 GitHub Pages</a></li>
+          <li><a href="https://Link1.in/com2000" target="_blank" rel="noopener">Link1.in/com2000</a></li>
+          <li><a href="https://Facebook.com/com2000ipo" target="_blank" rel="noopener">Facebook</a> · <a href="https://X.com/com2000ipo" target="_blank" rel="noopener">X</a></li>
+          <li><a href="https://www.crunchbase.com/organization/com2000" target="_blank" rel="noopener">Crunchbase</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Site Map</h4>
+        <ul>
+          <li><a href="#project">Project Overview</a></li>
+          <li><a href="#plan">Business Plan</a></li>
+          <li><a href="#spacepod">SpacePod STO Proposal</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 RWA1.net Accelerator · Com2000.org Web3 RWA Accelerator</span>
+      <span>Seattle · Puyallup · Washington State USA</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

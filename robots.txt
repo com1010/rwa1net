@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rwa1.net/sitemap.xml
